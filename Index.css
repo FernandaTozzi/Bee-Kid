@@ -1,10 +1,10 @@
 body {
-  background-image: url('assets/Background-GirlBee.png');
-  background-repeat: no-repeat;            /* não repetir */
-  background-size: cover;                  /* cobre toda a tela */
-  background-position: center;             /* centraliza a imagem */
+  background-image: url('../assets/Background-GirlBee.png');
+  background-repeat: no-repeat;           
+  background-size: cover;                  
+  background-position: center;            
   margin: 0;                               
-  height: 100vh;                           /* garante 100% da altura da tela */
+  height: 100vh;                          
 }
 
 .login{
@@ -30,7 +30,7 @@ body {
 
 
 .label-base{
- margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .login-inputs{
@@ -47,5 +47,13 @@ body {
     height: 2.5rem;
     align-items: center;
     border-radius: 50px;
+}
+
+#login-button {
+  width: 9rem;
+  margin-top: 2.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
