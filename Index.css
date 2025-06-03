@@ -1,0 +1,51 @@
+body {
+  background-image: url('assets/Background-GirlBee.png');
+  background-repeat: no-repeat;            /* não repetir */
+  background-size: cover;                  /* cobre toda a tela */
+  background-position: center;             /* centraliza a imagem */
+  margin: 0;                               
+  height: 100vh;                           /* garante 100% da altura da tela */
+}
+
+.login{
+    background-color: rgba(0, 0, 0, 0.762);
+    width: 33%;
+    height: 100% ;
+    margin-left:1% ;
+    padding: 3rem 0px 3rem 0px;
+}
+
+.logo{
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.login-divisor{
+    color: white;
+    width: 60%;
+}
+
+
+
+.label-base{
+ margin-top: 2rem;
+}
+
+.login-inputs{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  color: white;
+}
+
+.input-base{
+    text-align: center; 
+    height: 2.5rem;
+    align-items: center;
+    border-radius: 50px;
+}
+
