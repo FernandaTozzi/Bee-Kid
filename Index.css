@@ -42,10 +42,15 @@ body {
   color: white;
 }
 
-.input-base{
+.input-base,
+.button-login{
     text-align: center; 
     height: 2.5rem;
     align-items: center;
     border-radius: 50px;
 }
 
+.button-login{
+  width: 40%;
+  margin: auto;
+}
