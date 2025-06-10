@@ -1,0 +1,47 @@
+
+body {
+  background-image: url('assets/Background-GirlBee.png');
+  background-repeat: no-repeat;            /* não repetir */
+  background-size: cover;                  /* cobre toda a tela */
+  background-position: center;             /* centraliza a imagem */
+  margin: 0;                               
+  height: 100vh;                           /* garante 100% da altura da tela */
+}
+
+.cadastro{
+    background-color: rgba(0, 0, 0, 0.762);
+    width: 33%;
+    height: 100% ;
+    float:right;
+    margin-right: 1%;
+}
+
+.cadastro-inputs{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 80%;
+  color: white;
+}
+.cadastro-info{
+  margin-top: 20%;
+}
+
+.input-base{
+    
+    margin-bottom: 1.5rem;
+}
+.input-base,
+.button-cadastro{
+    text-align: center; 
+    height: 2.5rem;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.button-cadastro{
+    font-size: 16px ;
+    width: 40%;
+    margin: 2rem auto;
+}

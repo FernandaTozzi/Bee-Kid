@@ -1,0 +1,54 @@
+<style>
+  .senha-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .input-base {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .toggle-senha {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle-senha img {
+    width: 24px;
+    height: 24px;
+  }
+</style>
+
+<form class="cadastro-inputs">
+  <label class="label-base" for="senha">Senha</label>
+  <div class="senha-container">
+    <input class="input-base" type="password" id="senha" name="senha" placeholder="Digite sua senha">
+    <button type="button" class="toggle-senha" onclick="toggleSenha()">
+      <img id="icone-senha" src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="Mostrar senha">
+    </button>
+  </div>
+
+  <input class="button-login" type="submit" value="Cadastrar" id="login-button">
+</form>
+
+<script>
+  function toggleSenha() {
+    const input = document.getElementById("senha");
+    const icone = document.getElementById("icone-senha");
+
+    if (input.getAttribute("type") === "password") {
+      input.setAttribute("type", "text");
+      icone.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/709/709612.png"); // Olho aberto
+    } else {
+      input.setAttribute("type", "password");
+      icone.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/159/159604.png"); // Olho fechado
+    }
+  }
+</script>
