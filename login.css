@@ -90,3 +90,25 @@ body {
     width: 40%;
     margin: 0px auto 20px ;
 }
+
+
+/* Telas médias */
+@media (max-width: 900px) {
+  .login{
+    background-color: rgba(0, 0, 0, 0.762);
+    width: 100%;
+    height: 100% ;
+    margin-left:0 ;
+}
+}
+
+/* Telas pequenas */
+@media (max-width: 480px) {
+  .login{
+    background-color: rgba(0, 0, 0, 0.762);
+    width: 100%;
+    height: 100% ;
+    margin-left:0 ;
+}
+
+}

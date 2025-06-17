@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro-next.css">
+    <title>Bee Kid</title>
+</head>
+<body>
+  
+<div class="teste">
+<div class="cadastro">
+
+    <div class="cadastro-info">
+      <div class="position">
+        <div class="check-group"> 
+            <div class="check-button" onclick="selectOption(this, 'cadastro-crianca.html')">
+                Sou um Familiar
+                <div class="circle"></div>
+            </div>
+            <div>
+                <p class="p-center">Ou</p>
+               <hr class="login-divisor">
+            </div>
+            <div class="check-button" onclick="selectOption(this, 'home.html')">
+                Sou uma Babá
+                <div class="circle"></div>
+            </div>
+
+            <!-- Botão desativado por padrão -->
+            <button class="button-cadastro" id="submitBtn" disabled>
+              <img class="arrow" src="assets/circle-arrow.png" alt="">
+            </button>
+        </div>
+      </div>
+  
+    </div>
+</div>
+</div>
+
+<script>
+  let selectedUrl = null;
+
+  function selectOption(element, url) {
+    document.querySelectorAll('.check-button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    element.classList.add('active');
+    selectedUrl = url;
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = false;
+    btn.classList.add('enabled');
+  }
+
+  document.getElementById('submitBtn').addEventListener('click', function () {
+    if (selectedUrl) {
+      window.location.href = selectedUrl;
+    }
+  });
+</script>
+
+</body>
+</html>

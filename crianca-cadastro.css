@@ -1,0 +1,167 @@
+body {
+  background-image: url('assets/black-background.png');
+  background-size: cover;             
+  background-position: center;        
+  margin: 0;                               
+  height: 100vh;                         
+}
+
+.header{
+  background-color: #121212;
+  width: 100%;
+  height: 50px;
+}
+
+.kid-img{
+  max-width: 9.5rem;
+  border-radius: 100%;
+}
+
+.kids-list{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  width: 40%;
+}
+
+.add-kid{
+  color:rgb(0, 57, 0);
+  background-color: #94E83D;
+  width: 40%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.kid{
+  background-image: url('assets/bees.png');
+  background-repeat: no-repeat;         
+  background-size: cover;             
+  background-position: center;   
+  max-width: 100%;
+  border-radius: 30px;  
+  display: flex;
+}
+
+.nanny{
+  background-color: #B5D2BF;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.kid-profile,
+.kid-name{
+  margin: 20px 25px 20px 30px;
+}
+
+.kid-txt{
+   margin: 20px 25px 20px 30px;
+}
+
+hr{
+    color: black;
+    width: 100%;
+    margin: 0px auto 20px ;
+}
+
+.kid-container{
+  display: grid;
+  gap: 10px;
+  margin: 80px 0px;
+}
+
+.kid-divisor {
+  border: none;         
+  height: 1px;         
+  background-color: #000; 
+  margin: 0px 0px 20px 0px;      
+}
+
+.kid-button{
+  margin-top: 20px;
+  font-size: 20px ;
+  border: #024E19 solid 1px;
+  background-color: #B5D2BF;
+  border-radius: 10px;
+  width: 50%;
+  height: 35px;
+}
+
+  .kid-button:hover {
+    background-color: #ffffff;
+  }
+.nanny-button{
+  margin: 40px;
+  font-size: 20px ;
+  border: #024E19 solid 1px;
+  background-color: #C99305;
+  border-radius: 10px;
+  width: 40%;
+  height: 35px;
+}
+  .nanny-button:hover {
+    background-color: #ab7b00;
+  }
+
+  /* Telas médias */
+@media (max-width: 900px) {
+  .login{
+    background-color: rgba(0, 0, 0, 0.762);
+    width: 100%;
+    height: 100% ;
+    margin-left:0 ;
+}
+}
+
+/* Telas pequenas */
+@media (max-width: 480px) {
+
+.header{
+  background-color: #121212;
+  width: 100%;
+  height: 50px;
+}
+
+.kids-list{
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(58, 58, 58);
+  width: 100%;
+}
+
+.kid{
+  margin: auto;
+  background-image: url('assets/bees.png');
+  background-repeat: no-repeat;         
+  background-size: cover;             
+  background-position: center;   
+  max-width: 100%;
+  border-radius: 30px;  
+  display: block;
+}
+.nanny{
+  background-color: #B5D2BF;
+  width: 80%;
+  border-radius: 30px;
+}
+.nanny-button{
+  margin: 40px;
+  font-size: 20px ;
+  border: #024E19 solid 1px;
+  background-color: #C99305;
+  border-radius: 10px;
+  width: 70%;
+  height: 35px;
+}
+.kid-txt{
+   margin: 0px;
+}
+
+.kid-container{
+  gap: 0px;
+  margin: 0px;
+}
+
+}
